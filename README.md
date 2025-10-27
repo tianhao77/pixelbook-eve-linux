@@ -7,8 +7,11 @@ https://github.com/jmontleon/pixelbook-fedora?tab=readme-ov-file#brightness
 # Add configuration for kernel module i915
 sudo echo 'options i915 enable_dpcd_backlight=1' >> /etc/modprobe.d/i915.conf
 
-# # Update initramfs
+# Update initramfs on Fedora
 sudo dracut -f
+
+# Update initramfs on Debian/Ubuntu
+sudo update-initramfs -u -k all
 ```
 
 # Keyboard
@@ -54,3 +57,7 @@ Edit the .desktop entry and add `TouchpadOverscrollHistoryNavigation` to `--enab
 ```
 Exec=/usr/bin/google-chrome-stable %U --enable-features=UseOzonePlatform,TouchpadOverscrollHistoryNavigation --ozone-platform=wayland
 ```
+
+# Misc
+
+https://nattdf.streamlit.app
