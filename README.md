@@ -61,3 +61,9 @@ Exec=/usr/bin/google-chrome-stable %U --enable-features=UseOzonePlatform,Touchpa
 # Misc
 
 https://nattdf.streamlit.app
+
+```bash
+chmod +x fedora_things_to_do.sh
+sudo ./fedora_things_to_do.sh
+```
+
